@@ -256,7 +256,7 @@ nav a.active {
 .earth-container {
     position: absolute;
 
-    right: -8%;
+    right: 5%;
     top: 18%;
 
     width: 60%;
@@ -275,13 +275,7 @@ nav a.active {
     right: 0;
     top: 0;
 
-    background:
-        radial-gradient(
-            circle at 40% 35%,
-            #1d91cf,
-            #062746 45%,
-            #010a17 70%
-        );
+    background: url('assets/earth.jpg') center center / cover no-repeat;
 
     box-shadow:
         0 0 80px rgba(0,180,255,0.35),
@@ -339,23 +333,23 @@ nav a.active {
 }
 
 .card-ai {
-    top: 20px;
-    left: 10%;
+    top: 10%;
+    right: 10%;
 }
 
 .card-bio {
-    top: 50px;
-    right: 0;
+    top: 30%;
+    right: -10%;
 }
 
 .card-nano {
-    top: 40%;
-    right: 0;
+    top: 50%;
+    right: -15%;
 }
 
 .card-green {
-    bottom: 15%;
-    right: 15%;
+    bottom: 10%;
+    right: -5%;
 }
 
 
