@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanoverse Amrita - Precision Nanotechnology</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .division-hero {
+            min-height: 70vh;
+            padding: 160px 7% 80px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-navy), var(--bg-deep-space));
+            position: relative;
+        }
+        .division-hero h1 { font-size: clamp(40px, 5vw, 70px); margin-bottom: 20px; }
+        .content-section { padding: 100px 7%; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature-box {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .feature-box:hover { transform: translateY(-10px); border-color: var(--accent-cyan); }
+        .feature-box h3 { color: var(--accent-cyan); margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><h2>NANOVERSE</h2><span>SOLUTIONS</span></div>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../index.html#divisions">Divisions</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="contact-btn" onclick="location.href='contact.html'">Get in Touch</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="division-hero">
+        <div class="hero-content">
+            <p class="eyebrow">NANOTECHNOLOGY FOR HEALTHCARE</p>
+            <h1>Nanoverse <span style="background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue)); -webkit-background-clip: text; color: transparent;">Amrita</span></h1>
+            <p class="hero-description">Engineering matter at the atomic level to create non-invasive diagnostics and targeted therapeutic delivery systems.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 style="text-align: center; font-size: 40px; margin-bottom: 50px;">Our Core Focus</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>Targeted Delivery</h3>
+                <p>Using nano-carriers to deliver medication directly to diseased cells, minimizing side effects and maximizing efficacy.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Nano-Diagnostics</h3>
+                <p>Ultra-sensitive sensors capable of detecting biomarkers for early-stage cancer and neurodegenerative diseases.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Biocompatible Materials</h3>
+                <p>Developing advanced polymers that integrate seamlessly with human tissue for long-term implants.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--bg-navy); padding: 50px 7%;">
+        <div class="footer-logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><strong>NANOVERSE</strong><small>SOLUTIONS</small></div>
+        </div>
+        <p>© 2026 Nanoverse Solutions. All rights reserved.</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

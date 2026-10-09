@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nanoverse Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            min-height: 60vh;
+            padding: 160px 7% 80px;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 20% 30%, rgba(0, 150, 255, 0.15), transparent 40%), var(--bg-deep-space);
+        }
+        .about-hero .hero-content { width: 100%; max-width: 800px; }
+        .about-hero h1 { font-size: clamp(35px, 5vw, 60px); line-height: 1.2; margin-bottom: 20px; }
+
+        .vision-pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .vision-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .vision-item:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.1); }
+
+        .detailed-division-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .detailed-card {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .detailed-card:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+        .card-header .division-icon {
+            font-size: 30px;
+            background: rgba(255,255,255,0.1);
+            width: 50px; height: 50px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 12px;
+        }
+        .card-header h3 { font-size: 22px; }
+
+        @media(max-width: 900px) {
+            .detailed-division-grid, .vision-pillars { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><h2>NANOVERSE</h2><span>SOLUTIONS</span></div>
+        </div>
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="index.html#divisions">Our Divisions</a>
+            <a href="index.html#technology">Technology</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="contact-btn" onclick="location.href='contact.html'">Get in Touch</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="about-hero">
+        <div class="hero-content">
+            <p class="eyebrow">WHO WE ARE</p>
+            <h1>Our Journey to a <span style="background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue)); -webkit-background-clip: text; color: transparent;">Better Tomorrow</span></h1>
+            <p class="hero-description">Nanoverse Solutions bridges the gap between futuristic research and real-world application, operating at the bleeding edge of science to extend human healthspan.</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 100px 7%;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <p class="section-label">OUR VISION</p>
+            <h2>Science, Technology and Humanity</h2>
+        </div>
+        <div class="vision-pillars">
+            <div class="vision-item"><h3>Innovation</h3><p>Pushing boundaries in molecular engineering.</p></div>
+            <div class="vision-item"><h3>Accessibility</h3><p>Life-saving diagnostics for all.</p></div>
+            <div class="vision-item"><h3>Sustainability</h3><p>Harmonizing progress with planetary health.</p></div>
+        </div>
+    </section>
+
+    <section class="section" style="padding: 100px 7%; background: var(--bg-navy);">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <p class="section-label">DETAILED DIVISIONS</p>
+            <h2>Deep Tech, Deep Impact</h2>
+        </div>
+        <div class="detailed-division-grid">
+            <div class="detailed-card">
+                <div class="card-header"><div class="division-icon">⚛</div><h3>Nanoverse Amrita</h3></div>
+                <p>Precision nanotechnology for non-invasive diagnostics and targeted drug-delivery.</p>
+            </div>
+            <div class="detailed-card">
+                <div class="card-header"><div class="division-icon">🧠</div><h3>Nanoverse Medha</h3></div>
+                <p>Advanced AI models for scientific discovery and societal progress.</p>
+            </div>
+            <div class="detailed-card">
+                <div class="card-header"><div class="division-icon">🧬</div><h3>Nanoverse Sanjivani AI</h3></div>
+                <p>Genomic data and ML to slow biological aging and restore cellular function.</p>
+            </div>
+            <div class="detailed-card">
+                <div class="card-header"><div class="division-icon">🌿</div><h3>Nanoverse Dhanvantari AI</h3></div>
+                <p>Integrating traditional knowledge with modern AI for new therapeutic compounds.</p>
+            </div>
+            <div class="detailed-card">
+                <div class="card-header"><div class="division-icon">🍽</div><h3>Dineverse</h3></div>
+                <p>A complete restaurant ecosystem optimizing supply chains for India.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><strong>NANOVERSE</strong><small>SOLUTIONS</small></div>
+        </div>
+        <p>Technology · Innovation · A Healthier Tomorrow</p>
+        <p class="copyright">© 2026 Nanoverse Solutions. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

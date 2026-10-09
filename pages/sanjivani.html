@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanoverse Sanjivani AI - Longevity Sciences</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .division-hero {
+            min-height: 70vh;
+            padding: 160px 7% 80px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--bg-navy), var(--bg-deep-space));
+            position: relative;
+        }
+        .division-hero h1 { font-size: clamp(40px, 5vw, 70px); margin-bottom: 20px; }
+        .content-section { padding: 100px 7%; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature-box {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+        }
+        .feature-box:hover { transform: translateY(-10px); border-color: var(--accent-purple); }
+        .feature-box h3 { color: var(--accent-purple); margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><h2>NANOVERSE</h2><span>SOLUTIONS</span></div>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../index.html#divisions">Divisions</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+        <button class="contact-btn" onclick="location.href='contact.html'">Get in Touch</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="division-hero">
+        <div class="hero-content">
+            <p class="eyebrow">LONGEVITY & PERSONALIZED MEDICINE</p>
+            <h1>Nanoverse <span style="background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue)); -webkit-background-clip: text; color: transparent;">Sanjivani AI</span></h1>
+            <p class="hero-description">Harnessing the power of genomics and AI to reverse cellular aging and extend the human healthy lifespan.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2 style="text-align: center; font-size: 40px; margin-bottom: 50px;">The Quest for Longevity</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>Cellular Rejuvenation</h3>
+                <p>Developing AI-driven therapies to reset the epigenetic clock and restore cells to a more youthful state.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Precision Genomics</h3>
+                <p>Mapping individual genetic blueprints to provide hyper-personalized nutrition and medical interventions.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Organ Regeneration</h3>
+                <p>Integrating synthetic biology and AI to accelerate the growth of bio-compatible replacement organs.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--bg-navy); padding: 50px 7%;">
+        <div class="footer-logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><strong>NANOVERSE</strong><small>SOLUTIONS</small></div>
+        </div>
+        <p>© 2026 Nanoverse Solutions. All rights reserved.</p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Nanoverse Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .careers-hero {
+            min-height: 60vh;
+            padding: 160px 7% 80px;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 80% 20%, rgba(103, 112, 255, 0.2), transparent 40%), var(--bg-deep-space);
+        }
+        .careers-hero h1 { font-size: clamp(35px, 5vw, 60px); margin-bottom: 20px; }
+
+        .job-section { padding: 100px 7%; }
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .job-card {
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .job-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); }
+        .job-card h3 { font-size: 22px; margin-bottom: 10px; color: var(--accent-cyan); }
+        .job-card p { color: var(--text-muted); margin-bottom: 20px; line-height: 1.6; }
+        .apply-btn {
+            width: fit-content;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: var(--accent-cyan);
+            color: var(--bg-deep-space);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .apply-btn:hover { background: white; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><h2>NANOVERSE</h2><span>SOLUTIONS</span></div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#divisions">Divisions</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="contact-btn" onclick="location.href='contact.html'">Get in Touch</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <section class="careers-hero">
+        <div class="hero-content">
+            <p class="eyebrow">JOIN THE REVOLUTION</p>
+            <h1>Shape the <span style="background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue)); -webkit-background-clip: text; color: transparent;">Future of Science</span></h1>
+            <p class="hero-description">We are looking for the world's most ambitious minds in AI, Nanotech, and Biotech to solve the impossible.</p>
+        </div>
+    </section>
+
+    <section class="job-section">
+        <h2 style="text-align: center; font-size: 40px; margin-bottom: 50px;">Open Positions</h2>
+        <div class="job-grid">
+            <div class="job-card">
+                <div>
+                    <h3>Senior AI Researcher</h3>
+                    <p>Leading the development of Large Language Models for scientific discovery and genomic analysis.</p>
+                </div>
+                <a href="#apply" class="apply-btn">Apply Now →</a>
+            </div>
+            <div class="job-card">
+                <div>
+                    <h3>Nanomaterials Engineer</h3>
+                    <p>Designing biocompatible nano-carriers for targeted drug delivery and non-invasive diagnostics.</p>
+                </div>
+                <a href="#apply" class="apply-btn">Apply Now →</a>
+            </div>
+            <div class="job-card">
+                <div>
+                    <h3>Computational Biologist</h3>
+                    <p>Focusing on epigenetic clock reversal and cellular rejuvenation protocols.</p>
+                </div>
+                <a href="#apply" class="apply-btn">Apply Now →</a>
+            </div>
+            <div class="job-card">
+                <div>
+                    <h3>Frontend Architect</h3>
+                    <p>Creating immersive, high-performance interfaces for our research dashboards.</p>
+                </div>
+                <a href="#apply" class="apply-btn">Apply Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--bg-navy); padding: 50px 7%;">
+        <div class="footer-logo">
+            <div class="logo-symbol"><img src="assets/logo.png" alt="Logo"></div>
+            <div><strong>NANOVERSE</strong><small>SOLUTIONS</small></div>
+        </div>
+        <p>© 2026 Nanoverse Solutions. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
