@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/amrita", "destination": "/pages/amrita.html" },
+    { "source": "/medha", "destination": "/pages/medha.html" },
+    { "source": "/sanjivani", "destination": "/pages/sanjivani.html" },
+    { "source": "/dhanvantari", "destination": "/pages/dhanvantari.html" },
+    { "source": "/dineverse", "destination": "/pages/dineverse.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/careers", "destination": "/careers.html" },
+    { "source": "/contact", "destination": "/contact.html" }
+  ]
+}
