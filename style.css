@@ -1,3 +1,26 @@
+/* ================= VARIABLES ================= */
+:root {
+    --bg-deep-space: #050914;
+    --bg-navy: #020611;
+    --bg-light: #f5f8fc;
+
+    --accent-cyan: #36d9ff;
+    --accent-blue: #6974ff;
+    --accent-purple: #7770ff;
+    --accent-glow: rgba(54, 217, 255, 0.3);
+
+    --text-main: #ffffff;
+    --text-muted: #c7d0dc;
+    --text-dark: #07101d;
+    --text-grey: #8995a5;
+
+    --glass-bg: rgba(5, 20, 40, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: blur(20px);
+
+    --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +32,12 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #050914;
-    color: white;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background: var(--bg-deep-space);
+    color: var(--text-main);
     overflow-x: hidden;
 }
+
 
 
 /* ================= NAVBAR ================= */
@@ -47,19 +71,10 @@ body {
     gap: 12px;
 }
 
-.logo-symbol {
-    font-size: 42px;
-    font-weight: bold;
-
-    background: linear-gradient(
-        135deg,
-        #00d9ff,
-        #7770ff
-    );
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.logo-symbol img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
 .logo h2 {
@@ -105,15 +120,15 @@ nav a.active {
 
     background: linear-gradient(
         100deg,
-        #36d9ff,
-        #6974ff
+        var(--accent-cyan),
+        var(--accent-blue)
     );
 
     color: #03101c;
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition: var(--transition-smooth);
 }
 
 .contact-btn:hover,
@@ -121,7 +136,7 @@ nav a.active {
     transform: translateY(-3px);
 
     box-shadow:
-        0 10px 30px rgba(30,200,255,0.3);
+        0 10px 30px var(--accent-glow);
 }
 
 
@@ -200,8 +215,8 @@ nav a.active {
 .contact h2 span {
     background: linear-gradient(
         90deg,
-        #24d8ff,
-        #7475ff
+        var(--accent-cyan),
+        var(--accent-blue)
     );
 
     background-clip: text;
